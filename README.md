@@ -25,7 +25,7 @@ Supra-api-nodejs its about monolith first approach. But this does not prevent yo
 
 ### 1. Controller layer
 Each entity have own controller class it slim layer representing resource mapping(routing) 
-```
+```js
 class PostsController extends BaseController {
   static get router () {
     router.get('/', this.actionRunner(actions.ListAction))
